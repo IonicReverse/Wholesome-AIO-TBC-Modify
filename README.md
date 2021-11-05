@@ -1,0 +1,1 @@
+This is Modify Version From https://github.com/Wholesome-wRobot/Wholesome-TBC-AIO-Fightclasses to make it works for WOTLK
