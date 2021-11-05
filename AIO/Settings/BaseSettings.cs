@@ -20,6 +20,12 @@ namespace WholesomeTBCAIO.Settings
         public int ThreadSleepCycle { get; set; }
 
         [Category("General")]
+        [DefaultValue(false)]
+        [DisplayName("Auto Update FC")]
+        [Description("Auto Update FC")]
+        public bool AutoUpdate { get; set; }
+
+        [Category("General")]
         [DefaultValue(true)]
         [DisplayName("Combat log")]
         [Description("Activate combat log")]
@@ -86,6 +92,7 @@ namespace WholesomeTBCAIO.Settings
 
         protected BaseSettings()
         {
+            AutoUpdate = false;
             ActivateCombatDebug = false;
             ThreadSleepCycle = 100;
             AssignTalents = true;

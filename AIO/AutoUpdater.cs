@@ -39,10 +39,10 @@ using wManager.Wow.Helpers;
                 AIOTBCSettings.CurrentSetting.LastUpdateDate = elapsedTicks;
                 AIOTBCSettings.CurrentSetting.Save();
 
-                string onlineFile = "https://github.com/IonicReverse/Wholesome-AIO-TBC-Modify/raw/master/AIO/bin/Debug/Wholesome_TBC_AIO_Fightclasses.dll";
+                string onlineFile = "https://github.com/IonicReverse/Wholesome-AIO-TBC-Modify/raw/master/AIO/Compiled/Wholesome_TBC_AIO_Fightclasses.dll";
 
                 // Version check
-                string onlineVersion = "https://raw.githubusercontent.com/IonicReverse/Wholesome-AIO-TBC-Modify/master/AIO/bin/Debug/Version.txt";
+                string onlineVersion = "https://raw.githubusercontent.com/IonicReverse/Wholesome-AIO-TBC-Modify/master/AIO/Compiled/Version.txt";
                 var onlineVersionContent = new WebClient { Encoding = Encoding.UTF8 }.DownloadString(onlineVersion);
                 if (onlineVersionContent == null || onlineVersionContent.Length > 10 || onlineVersionContent == MyCurrentVersion)
                 {
